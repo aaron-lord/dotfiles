@@ -5,7 +5,7 @@ for file in ~/dotfiles/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
-. ~/dotfiles/vendor/z.sh
+. ~/.dotfiles/vendor/z.sh
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
