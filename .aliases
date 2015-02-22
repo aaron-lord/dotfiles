@@ -9,19 +9,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# Editor
-alias subl='open -a "Sublime Text"'
-alias mou='open -a "Mou"'
-
-# Apache
-alias apacher="sudo apachectl restart"
-alias apachel="tail /private/var/log/apache2/error_log"
-alias vhosts="sudo $EDITOR /etc/apache2/extra/httpd-vhosts.conf"
-alias hosts='sudo $EDITOR /etc/hosts'
-
-# PHP
-alias art="php artisan"
-alias selenium="java -jar ~/.code/selenium-server-*.jar"
+# Copy / Paste
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -73,7 +63,6 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
 alias v="vim"
-alias git="hub"
 alias g="git"
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
